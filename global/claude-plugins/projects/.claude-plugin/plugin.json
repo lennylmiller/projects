@@ -1,0 +1,8 @@
+{
+  "name": "projects",
+  "description": "Ticket and project management for AI-assisted development workflows with .claude folder orchestration",
+  "author": {
+    "name": "Len Miller"
+  },
+  "version": "1.0.0"
+}

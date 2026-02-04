@@ -1,0 +1,7 @@
+{
+  "name": "feature-docs",
+  "description": "Interactive workflow for documenting features and enhancements with UML diagrams",
+  "author": {
+    "name": "Len Miller"
+  }
+}

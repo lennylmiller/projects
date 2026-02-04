@@ -1,0 +1,328 @@
+# ============================================================================
+# Comprehensive .gitignore for Multi-Disciplinary Project Repository
+# ============================================================================
+# This repository contains: Documentation, Blender projects, PlantUML server,
+# Claude Code plugins, Obsidian vault, and potential Node.js/Python projects
+# ============================================================================
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.VolumeIcon.icns
+.TemporaryItems
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# Editor & IDE Configurations
+# ============================================================================
+
+# Claude Code (local settings and plan history)
+.claude/
+
+# Obsidian (personal vault configuration)
+.obsidian/
+
+# VSCode (workspace settings - uncomment if you want to share team settings)
+.vscode/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*.swn
+.*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+.\#*
+.emacs.desktop
+.emacs.desktop.lock
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ============================================================================
+# Environment & Secrets
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.envrc
+
+# Secrets and credentials
+credentials.json
+secrets.*
+*.key
+*.pem
+*.p12
+*.pfx
+.secret
+.secrets/
+
+# API keys and tokens
+*_token
+*_key
+*_secret
+
+# ============================================================================
+# Build Artifacts & Logs
+# ============================================================================
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Process files
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+data/
+tmp/
+temp/
+
+# Build directories
+build/
+dist/
+out/
+target/
+
+# ============================================================================
+# Node.js / JavaScript
+# ============================================================================
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# npm
+.npm
+package-lock.json
+.pnp.*
+.yarn/
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Testing
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# ============================================================================
+# Python
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+.Python
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+wheels/
+pip-wheel-metadata/
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# ============================================================================
+# Nix
+# ============================================================================
+
+# Nix build results
+result
+result-*
+
+# direnv
+.direnv/
+
+# ============================================================================
+# Java
+# ============================================================================
+
+# Compiled class files
+*.class
+
+# Package files (be selective - some .jar/.war might be intentional)
+# Uncomment if you don't want to track these:
+# *.jar
+# *.war
+# *.ear
+
+# Log files
+hs_err_pid*
+
+# ============================================================================
+# Blender
+# ============================================================================
+
+# Blender backup files
+*.blend1
+*.blend2
+*.blend1.blend2
+
+# ============================================================================
+# Archives & Temporary Files
+# ============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+*.old
+
+# Archives (uncomment if you don't want to track these)
+# *.zip
+# *.tar.gz
+# *.rar
+# *.7z
+
+# ============================================================================
+# Version Control
+# ============================================================================
+
+# Merge conflict remnants
+*.orig
+
+# Patch rejects
+*.rej
+
+# Git patches
+*.patch
+
+# ============================================================================
+# Databases
+# ============================================================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql.gz
+*.dump
+
+# ============================================================================
+# Documentation Build Output
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+
+# MkDocs
+site/
+
+# ============================================================================
+# Other
+# ============================================================================
+
+# Lock files (for various tools)
+.lock-wscript
+
+# Dependency directories
+lib-cov/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
