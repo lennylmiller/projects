@@ -2,7 +2,7 @@ TODO: Add usable new project users , so cursor and/or vs-code users wanting to r
 # Current Thinking
 
 ❯ tree -L 3
-.
+```bash
 ├── global
 │   └── plantuml-server (TODO: Add to README, why, how, and notes)
 │       ├── bin
@@ -50,6 +50,7 @@ TODO: Add usable new project users , so cursor and/or vs-code users wanting to r
 │   └── WEB-14
 ├── README.md
 └── VISON.md
+```
 ##1##
 
 
