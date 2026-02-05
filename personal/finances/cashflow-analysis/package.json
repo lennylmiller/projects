@@ -1,0 +1,27 @@
+{
+  "name": "cashflow-analysis",
+  "version": "1.0.0",
+  "description": "Multi-scenario cashflow analysis engine with web SPA and Google Sheets renderers",
+  "type": "module",
+  "main": "src/core/calculator.js",
+  "scripts": {
+    "test": "node src/core/__tests__/calculator.test.js",
+    "test:watch": "nodemon --exec node src/core/__tests__/calculator.test.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "cashflow",
+    "financial-planning",
+    "scenario-analysis",
+    "budgeting"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {}
+}

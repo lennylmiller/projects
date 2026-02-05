@@ -1,8 +1,13 @@
 
 # Slept On It (SOI)
 
-1. Have Claude Evaluate 
+1. Have Claude Evaluate https://docs.google.com/spreadsheets/d/13l0Tzxi6qNjb-iofmoLnU5COrrRLz6Yv6It7XxpMqks/edit?gid=559590668#gid=559590668 
 
+2. Have Claude Help me Create the Plan to create a fully architected cashflow analysis tool, we'll need to understand how it fits in to our future.
+
+  * The Use Case Brain Storm Session 
+  * The Scope of Integration and Import/Export (i.e. interface with my bank's apis or web screenscrape');
+  * 
 
 
 # Thinking out Loud

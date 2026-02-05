@@ -1,0 +1,946 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+    <SIGNONMSGSRSV1>
+        <SONRS>
+            <STATUS>
+                <CODE>0
+                <SEVERITY>INFO
+            </STATUS>
+            <DTSERVER>20260205015119[-8:PST]
+            <LANGUAGE>ENG
+            <FI>
+      <ORG> DI
+      <FID> 323274775
+    </FI>
+      <INTU.BID>18202
+      <INTU.USER>lennylmiller
+        </SONRS>
+    </SIGNONMSGSRSV1>
+    <BANKMSGSRSV1>
+        <STMTTRNRS>
+              <TRNUID>0
+              <STATUS>
+                  <CODE>0
+                  <SEVERITY>INFO
+              </STATUS>
+
+              <STMTRS>
+                <CURDEF>USD
+
+                    <BANKACCTFROM>
+                            <BANKID>323274775
+                            <ACCTID>194177K122772533
+                            <ACCTTYPE>CHECKING
+                    </BANKACCTFROM>
+
+                <BANKTRANLIST>
+                    <DTSTART>20260119000000[-8:PST]
+                    <DTEND>20260204000000[-8:PST]
+
+                      <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-3.99
+                            <FITID>20260204000000[-5:EST]*-3.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>*VN54T1888-802-3080 WAUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-2.99
+                            <FITID>20260204000000[-5:EST]*-2.99*13**POS Withdrawal AMAZON
+							<NAME>POS Withdrawal AMAZON
+							<MEMO>PRIME*5M4OB4amzn.com/bill WAUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-14.25
+                            <FITID>20260204000000[-5:EST]*-14.25*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>COTALENT ORUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-14.25
+                            <FITID>20260204000000[-5:EST]*-14.25*13**POS Withdrawal DAIRY QUEEN
+							<NAME>POS Withdrawal DAIRY QUEEN
+							<MEMO>#70680 ASHLAND ORUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-4.00
+                            <FITID>20260204000000[-5:EST]*-4.00*12**Ext Withdrawal PAYPAL
+							<NAME>Ext Withdrawal PAYPAL
+							<MEMO>260203PPZ9ZY - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-15.97
+                            <FITID>20260204000000[-5:EST]*-15.97*13**POS Withdrawal PRESSNET LLC
+							<NAME>POS Withdrawal PRESSNET LLC
+							<MEMO>DOVER DEUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-17.05
+                            <FITID>20260204000000[-5:EST]*-17.05*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260204000000[-8:PST]
+                            <TRNAMT>-12.99
+                            <FITID>20260204000000[-5:EST]*-12.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>Channelamzn.com/bill WAUS
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260203000000[-8:PST]
+                            <TRNAMT>-42.98
+                            <FITID>20260203000000[-5:EST]*-42.98*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260203000000[-8:PST]
+                            <TRNAMT>-7.85
+                            <FITID>20260203000000[-5:EST]*-7.85*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260203000000[-8:PST]
+                            <TRNAMT>-13.17
+                            <FITID>20260203000000[-5:EST]*-13.17*13**POS Withdrawal CROWN MARKET 600
+							<NAME>POS Withdrawal CROWN MARKET 600
+							<MEMO>MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260203000000[-8:PST]
+                            <TRNAMT>-731.29
+                            <FITID>20260203000000[-5:EST]*-731.29*12**Ext Withdrawal Ashland Talent R
+							<NAME>Ext Withdrawal Ashland Talent R
+							<MEMO>855-872-6632 - Autopay
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260203000000[-8:PST]
+                            <TRNAMT>-6.38
+                            <FITID>20260203000000[-5:EST]*-6.38*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-14.99
+                            <FITID>20260202000000[-5:EST]*-14.99*13**POS Withdrawal AMAZON
+							<NAME>POS Withdrawal AMAZON
+							<MEMO>PRIME*5Z5LZ0Amzn.com/bill WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>ATM
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-103.00
+                            <FITID>20260202000000[-5:EST]*-103.00*11**ATM Withdrawal BLUE TALENT 102
+							<NAME>ATM Withdrawal BLUE TALENT 102
+							<MEMO>TALENT AVE Talent ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>CHECK
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-500.00
+                            <FITID>20260202000000[-5:EST]*-500.00*1*1445*Over Counter Check
+							<CHECKNUM>1445
+							<NAME>Over Counter Check
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-8.55
+                            <FITID>20260202000000[-5:EST]*-8.55*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-9.99
+                            <FITID>20260202000000[-5:EST]*-9.99*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260202000000[-8:PST]
+                            <TRNAMT>-9.99
+                            <FITID>20260202000000[-5:EST]*-9.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>*V51VB9888-802-3080 WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-15.00
+                            <FITID>20260201000000[-5:EST]*-15.00*13**POS Withdrawal DEEMOS HYPER3D
+							<NAME>POS Withdrawal DEEMOS HYPER3D
+							<MEMO>HYPER3D.AI DEUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-44.51
+                            <FITID>20260201000000[-5:EST]*-44.51*13**POS Withdrawal 76 - TALENT
+							<NAME>POS Withdrawal 76 - TALENT
+							<MEMO>TRUCK STALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-200.00
+                            <FITID>20260201000000[-5:EST]*-200.00*13**POS Withdrawal CLAUDE.AI
+							<NAME>POS Withdrawal CLAUDE.AI
+							<MEMO>SUBSCRIPTANTHROPIC.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-49.20
+                            <FITID>20260201000000[-5:EST]*-49.20*13**POS Withdrawal Google
+							<NAME>POS Withdrawal Google
+							<MEMO>Workspace_in650-2530000 CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-9.70
+                            <FITID>20260201000000[-5:EST]*-9.70*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-17.63
+                            <FITID>20260201000000[-5:EST]*-17.63*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-23.53
+                            <FITID>20260201000000[-5:EST]*-23.53*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>DOLLARDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-68.32
+                            <FITID>20260201000000[-5:EST]*-68.32*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>SILVERDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-6.98
+                            <FITID>20260201000000[-5:EST]*-6.98*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260201000000[-8:PST]
+                            <TRNAMT>-87.98
+                            <FITID>20260201000000[-5:EST]*-87.98*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260131000000[-8:PST]
+                            <TRNAMT>-305.38
+                            <FITID>20260131000000[-5:EST]*-305.38*13**POS Withdrawal VZWRLSS*BILL PAY
+							<NAME>POS Withdrawal VZWRLSS*BILL PAY
+							<MEMO>VW800-9220204 CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260131000000[-8:PST]
+                            <TRNAMT>-10.99
+                            <FITID>20260131000000[-5:EST]*-10.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>Channelamzn.com/bill WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260131000000[-8:PST]
+                            <TRNAMT>-130.03
+                            <FITID>20260131000000[-5:EST]*-130.03*13**POS Withdrawal Starlink
+							<NAME>POS Withdrawal Starlink
+							<MEMO>Hawthorne CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260131000000[-8:PST]
+                            <TRNAMT>-13.50
+                            <FITID>20260131000000[-5:EST]*-13.50*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260131000000[-8:PST]
+                            <TRNAMT>-25.15
+                            <FITID>20260131000000[-5:EST]*-25.15*13**POS Withdrawal DOMINO'S 7269
+							<NAME>POS Withdrawal DOMINO'S 7269
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-12.99
+                            <FITID>20260130000000[-5:EST]*-12.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>Channelamzn.com/bill WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-10.00
+                            <FITID>20260130000000[-5:EST]*-10.00*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>COTALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-49.99
+                            <FITID>20260130000000[-5:EST]*-49.99*13**POS Withdrawal GF*
+							<NAME>POS Withdrawal GF*
+							<MEMO>WWW.SNAPFITNESSSNAPFITNESS.C TXUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-8.55
+                            <FITID>20260130000000[-5:EST]*-8.55*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-28.37
+                            <FITID>20260130000000[-5:EST]*-28.37*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-145.00
+                            <FITID>20260130000000[-5:EST]*-145.00*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260130000000[-8:PST]
+                            <TRNAMT>-73.69
+                            <FITID>20260130000000[-5:EST]*-73.69*12**Ext Withdrawal ROCKYMTN/PACIFIC
+							<NAME>Ext Withdrawal ROCKYMTN/PACIFIC
+							<MEMO>- POWER BILL
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-19.99
+                            <FITID>20260129000000[-5:EST]*-19.99*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-9.30
+                            <FITID>20260129000000[-5:EST]*-9.30*13**POS Withdrawal DOLLAR GENERAL
+							<NAME>POS Withdrawal DOLLAR GENERAL
+							<MEMO>DG 17350237 W VALLETALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-200.00
+                            <FITID>20260129000000[-5:EST]*-200.00*13**POS Withdrawal OPENAI *CHATGPT
+							<NAME>POS Withdrawal OPENAI *CHATGPT
+							<MEMO>SUBOPENAI.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-9.70
+                            <FITID>20260129000000[-5:EST]*-9.70*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-32.26
+                            <FITID>20260129000000[-5:EST]*-32.26*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>BLACKBDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-500.00
+                            <FITID>20260129000000[-5:EST]*-500.00*12**Ext Withdrawal PALM INDUSTRIES
+							<NAME>Ext Withdrawal PALM INDUSTRIES
+							<MEMO>- SALE
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-92.25
+                            <FITID>20260129000000[-5:EST]*-92.25*12**Ext Withdrawal AFFIRM.COM PAYME
+							<NAME>Ext Withdrawal AFFIRM.COM PAYME
+							<MEMO>- AFFIRM.COM
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-15.00
+                            <FITID>20260129000000[-5:EST]*-15.00*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-9.99
+                            <FITID>20260129000000[-5:EST]*-9.99*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>CREDIT
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>4212.65
+                            <FITID>20260129000000[-5:EST]*4212.65*512**Ext Deposit JACK HENRY AND A -
+							<NAME>Ext Deposit JACK HENRY AND A -
+							<MEMO>PAYROLL
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260129000000[-8:PST]
+                            <TRNAMT>-13.18
+                            <FITID>20260129000000[-5:EST]*-13.18*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260128000000[-8:PST]
+                            <TRNAMT>-6.50
+                            <FITID>20260128000000[-5:EST]*-6.50*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>ATM
+                            <DTPOSTED>20260128000000[-8:PST]
+                            <TRNAMT>-63.00
+                            <FITID>20260128000000[-5:EST]*-63.00*11**ATM Withdrawal BLUE TALENT 102
+							<NAME>ATM Withdrawal BLUE TALENT 102
+							<MEMO>TALENT AVE Talent ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>CREDIT
+                            <DTPOSTED>20260128000000[-8:PST]
+                            <TRNAMT>356.66
+                            <FITID>20260128000000[-5:EST]*356.66*512**Ext Deposit VACP TREAS 310 -
+							<NAME>Ext Deposit VACP TREAS 310 -
+							<MEMO>XXVA BENEF REF*48*VA COMPENSATION *01/01/26-01/31/26 \
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260127000000[-8:PST]
+                            <TRNAMT>-7.00
+                            <FITID>20260127000000[-5:EST]*-7.00*13**POS Withdrawal NPM, INC.
+							<NAME>POS Withdrawal NPM, INC.
+							<MEMO>NPMJS.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260127000000[-8:PST]
+                            <TRNAMT>-24.99
+                            <FITID>20260127000000[-5:EST]*-24.99*13**POS Withdrawal GOOGLE *Develope
+							<NAME>POS Withdrawal GOOGLE *Develope
+							<MEMO>Mountain View CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260127000000[-8:PST]
+                            <TRNAMT>-70.03
+                            <FITID>20260127000000[-5:EST]*-70.03*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>ALBERTDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260127000000[-8:PST]
+                            <TRNAMT>-50.00
+                            <FITID>20260127000000[-5:EST]*-50.00*13**POS Withdrawal PAYPAL *PYPL
+							<NAME>POS Withdrawal PAYPAL *PYPL
+							<MEMO>PAYIN4888-221-1161 CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-8.99
+                            <FITID>20260126000000[-5:EST]*-8.99*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-11.00
+                            <FITID>20260126000000[-5:EST]*-11.00*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>COTALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-9.00
+                            <FITID>20260126000000[-5:EST]*-9.00*13**POS Withdrawal SQ *GARCIA'S
+							<NAME>POS Withdrawal SQ *GARCIA'S
+							<MEMO>TACOS TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-59.50
+                            <FITID>20260126000000[-5:EST]*-59.50*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>KILLERDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-21.99
+                            <FITID>20260126000000[-5:EST]*-21.99*12**IAT Withdrawal IAT PAYPAL
+							<NAME>IAT Withdrawal IAT PAYPAL
+							<MEMO>1047815347384 EPOCH EU LTD
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-9.99
+                            <FITID>20260126000000[-5:EST]*-9.99*12**IAT Withdrawal IAT PAYPAL
+							<NAME>IAT Withdrawal IAT PAYPAL
+							<MEMO>1047824028701 PADDLE.COM
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260126000000[-8:PST]
+                            <TRNAMT>-6.99
+                            <FITID>20260126000000[-5:EST]*-6.99*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260125000000[-8:PST]
+                            <TRNAMT>-5.00
+                            <FITID>20260125000000[-5:EST]*-5.00*13**POS Withdrawal Starlink
+							<NAME>POS Withdrawal Starlink
+							<MEMO>Hawthorne CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260125000000[-8:PST]
+                            <TRNAMT>-7.00
+                            <FITID>20260125000000[-5:EST]*-7.00*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260125000000[-8:PST]
+                            <TRNAMT>-7.15
+                            <FITID>20260125000000[-5:EST]*-7.15*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260125000000[-8:PST]
+                            <TRNAMT>-15.40
+                            <FITID>20260125000000[-5:EST]*-15.40*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260124000000[-8:PST]
+                            <TRNAMT>-11.99
+                            <FITID>20260124000000[-5:EST]*-11.99*13**POS Withdrawal SQ *LUCYS TACO S
+							<NAME>POS Withdrawal SQ *LUCYS TACO S
+							<MEMO>MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260124000000[-8:PST]
+                            <TRNAMT>-10.50
+                            <FITID>20260124000000[-5:EST]*-10.50*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260124000000[-8:PST]
+                            <TRNAMT>-9.70
+                            <FITID>20260124000000[-5:EST]*-9.70*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260124000000[-8:PST]
+                            <TRNAMT>-19.99
+                            <FITID>20260124000000[-5:EST]*-19.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>*ZE3FN3888-802-3080 WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260124000000[-8:PST]
+                            <TRNAMT>-13.57
+                            <FITID>20260124000000[-5:EST]*-13.57*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-19.99
+                            <FITID>20260123000000[-5:EST]*-19.99*13**POS Withdrawal GOOGLE *YouTube
+							<NAME>POS Withdrawal GOOGLE *YouTube
+							<MEMO>Mountain View CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-24.69
+                            <FITID>20260123000000[-5:EST]*-24.69*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>MCDONADOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-9.20
+                            <FITID>20260123000000[-5:EST]*-9.20*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-9.75
+                            <FITID>20260123000000[-5:EST]*-9.75*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-14.48
+                            <FITID>20260123000000[-5:EST]*-14.48*13**POS Withdrawal HP *ALL- IN PLAN
+							<NAME>POS Withdrawal HP *ALL- IN PLAN
+							<MEMO>888-447-0148 CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>ATM
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-63.00
+                            <FITID>20260123000000[-5:EST]*-63.00*11**ATM Withdrawal BLUE TALENT 102
+							<NAME>ATM Withdrawal BLUE TALENT 102
+							<MEMO>TALENT AVE Talent ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-21.25
+                            <FITID>20260123000000[-5:EST]*-21.25*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-8.55
+                            <FITID>20260123000000[-5:EST]*-8.55*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3005 ASHLAND ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-6.00
+                            <FITID>20260123000000[-5:EST]*-6.00*13**POS Withdrawal DAIRY QUEEN
+							<NAME>POS Withdrawal DAIRY QUEEN
+							<MEMO>#70680 ASHLAND ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260123000000[-8:PST]
+                            <TRNAMT>-24.99
+                            <FITID>20260123000000[-5:EST]*-24.99*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-23.94
+                            <FITID>20260122000000[-5:EST]*-23.94*13**POS Withdrawal AMAZON.COM
+							<NAME>POS Withdrawal AMAZON.COM
+							<MEMO>SEATTLE WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-9.50
+                            <FITID>20260122000000[-5:EST]*-9.50*13**POS Withdrawal SQ *OHANA COFFEE
+							<NAME>POS Withdrawal SQ *OHANA COFFEE
+							<MEMO>COTALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-10.00
+                            <FITID>20260122000000[-5:EST]*-10.00*13**POS Withdrawal SQ *GARCIA'S
+							<NAME>POS Withdrawal SQ *GARCIA'S
+							<MEMO>TACOS TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-1.49
+                            <FITID>20260122000000[-5:EST]*-1.49*13**POS Withdrawal CHEVRON 0306695
+							<NAME>POS Withdrawal CHEVRON 0306695
+							<MEMO>TALENT ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-19.99
+                            <FITID>20260122000000[-5:EST]*-19.99*12**Ext Withdrawal PAYPAL INSTANT
+							<NAME>Ext Withdrawal PAYPAL INSTANT
+							<MEMO>TRANSFER - INST XFER
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-9.99
+                            <FITID>20260122000000[-5:EST]*-9.99*12**IAT Withdrawal IAT PAYPAL
+							<NAME>IAT Withdrawal IAT PAYPAL
+							<MEMO>1047768999175 PADDLE.COM MARKET LIMITED
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260122000000[-8:PST]
+                            <TRNAMT>-14.99
+                            <FITID>20260122000000[-5:EST]*-14.99*13**POS Withdrawal Prime Video
+							<NAME>POS Withdrawal Prime Video
+							<MEMO>Channelamzn.com/bill WAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260121000000[-8:PST]
+                            <TRNAMT>-51.00
+                            <FITID>20260121000000[-5:EST]*-51.00*12**Ext Withdrawal SYNCHRONY BANK
+							<NAME>Ext Withdrawal SYNCHRONY BANK
+							<MEMO>- PAYMENT
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260121000000[-8:PST]
+                            <TRNAMT>-82.99
+                            <FITID>20260121000000[-5:EST]*-82.99*13**POS Withdrawal DD *DOORDASH
+							<NAME>POS Withdrawal DD *DOORDASH
+							<MEMO>ALBERTDOORDASH.COM CAUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260120000000[-8:PST]
+                            <TRNAMT>-13.40
+                            <FITID>20260120000000[-5:EST]*-13.40*13**POS Withdrawal DUTCH BROS
+							<NAME>POS Withdrawal DUTCH BROS
+							<MEMO>OR3014 PHOENIX ORUS Card #6315
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260120000000[-8:PST]
+                            <TRNAMT>-4064.21
+                            <FITID>20260120000000[-5:EST]*-4064.21*12**Ext Withdrawal CROSSCOUNTRY
+							<NAME>Ext Withdrawal CROSSCOUNTRY
+							<MEMO>833-755-2066 - MORTGAGE
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>DEBIT
+                            <DTPOSTED>20260120000000[-8:PST]
+                            <TRNAMT>-73.23
+                            <FITID>20260120000000[-5:EST]*-73.23*12**Ext Withdrawal STATE FARM RO 27
+							<NAME>Ext Withdrawal STATE FARM RO 27
+							<MEMO>- SFPP
+                      </STMTTRN>
+
+					  <STMTTRN>
+                            <TRNTYPE>POS
+                            <DTPOSTED>20260119000000[-8:PST]
+                            <TRNAMT>-13.50
+                            <FITID>20260119000000[-5:EST]*-13.50*13**POS Withdrawal MCDONALD'S F112
+							<NAME>POS Withdrawal MCDONALD'S F112
+							<MEMO>221 FERN VALLEY RD MEDFORD ORUS Card #6315
+                      </STMTTRN>
+
+                </BANKTRANLIST>
+
+                <LEDGERBAL>
+                      <BALAMT>1839.84
+                      <DTASOF>20260205015119[-8:PST]
+                </LEDGERBAL>
+
+                <AVAILBAL>
+                      <BALAMT>1819.85
+                      <DTASOF>20260205015119[-8:PST]
+                </AVAILBAL>
+
+              </STMTRS>
+        </STMTTRNRS>
+    </BANKMSGSRSV1>
+</OFX>
