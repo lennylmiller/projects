@@ -1,0 +1,10 @@
+@startuml
+actor User
+participant "PlantUML\nServer" as Server
+database Storage
+
+User -> Server: POST diagram text
+Server -> Server: Parse PlantUML
+Server -> Server: Render to PNG/SVG
+Server -> User: Return image
+@enduml

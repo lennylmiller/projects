@@ -1,0 +1,14 @@
+
+# Environment dumps - contain secrets
+NIX-OPEN
+NIX-PURE
+
+# Gitea runtime data - contains sessions, keys, user data
+data/
+gitea-data/
+
+# Experiment logs (kept locally, not committed)
+EXPERIMENT-LOG.md
+
+# Server logs
+gitea-server.log

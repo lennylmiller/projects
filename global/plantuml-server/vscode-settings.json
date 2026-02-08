@@ -1,0 +1,23 @@
+{
+  // PlantUML Configuration for Local Server
+  // Add these to your VS Code or Cursor settings.json
+
+  // Use local PlantUML server
+  "plantuml.server": "http://localhost:8080/plantuml",
+  "plantuml.render": "PlantUMLServer",
+
+  // File associations
+  "files.associations": {
+    "*.puml": "plantuml",
+    "*.plantuml": "plantuml"
+  },
+
+  // Auto-save and preview settings (optional)
+  "plantuml.exportOutDir": ".",
+  "plantuml.exportFormat": "png",
+  "plantuml.exportSubFolder": false,
+
+  // Preview settings
+  "plantuml.previewAutoUpdate": true,
+  "plantuml.previewSnapIndicators": true
+}

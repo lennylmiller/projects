@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+# switch-to-github - Return from Gitea experiment to GitHub context
+# Task 1: Happy Path #1 - Clean state only
+
+set -e
+set -o pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Configuration
+GITEA_REMOTE="gitea"
+STATE_DIR=".git/gitea-state"
+STATE_FILE="$STATE_DIR/current.json"
+
+# Helper functions
+error() {
+    echo -e "${RED}Error: $1${NC}" >&2
+    exit 1
+}
+
+info() {
+    echo -e "${BLUE}$1${NC}"
+}
+
+success() {
+    echo -e "${GREEN}$1${NC}"
+}
+
+warn() {
+    echo -e "${YELLOW}$1${NC}"
+}
+
+# Check if in a git repository
+if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    error "Not in a git repository"
+fi
+
+# Check if in Gitea mode
+if [[ ! -f "$STATE_FILE" ]]; then
+    error "Not in Gitea experiment mode.
+    Use 'switch-to-gitea' to create an experiment first."
+fi
+
+# Read state
+if ! command -v jq &> /dev/null; then
+    error "jq is required but not installed. Install with: nix-shell -p jq"
+fi
+
+ORIGINAL_BRANCH=$(jq -r '.original_branch' "$STATE_FILE" 2>/dev/null) || error "Failed to read state file"
+EXPERIMENT_BRANCH=$(jq -r '.experiment_branch' "$STATE_FILE" 2>/dev/null) || error "Failed to read state file"
+CURRENT_BRANCH=$(git branch --show-current)
+
+if [[ "$CURRENT_BRANCH" != "$EXPERIMENT_BRANCH" ]]; then
+    warn "Warning: Currently on '$CURRENT_BRANCH' but state says '$EXPERIMENT_BRANCH'"
+    warn "Continuing anyway..."
+fi
+
+info "Returning from: $EXPERIMENT_BRANCH"
+info "Returning to:   $ORIGINAL_BRANCH"
+
+# Check for uncommitted changes
+if [[ -n $(git status --porcelain) ]]; then
+    warn "Uncommitted changes detected. Committing automatically..."
+    git add -A
+    git commit -m "Auto-commit before switching back to GitHub
+
+Experimental work on: $EXPERIMENT_BRANCH
+Returning to: $ORIGINAL_BRANCH
+Timestamp: $(date -Iseconds)"
+
+    success "✓ Changes committed"
+fi
+
+# Push to Gitea remote (preserve experiment)
+info "Pushing experiment to Gitea..."
+if git push "$GITEA_REMOTE" HEAD 2>&1; then
+    success "✓ Experiment pushed to Gitea"
+else
+    warn "Warning: Failed to push to Gitea (experiment preserved locally)"
+fi
+
+# Switch back to original branch
+info "Switching back to $ORIGINAL_BRANCH..."
+git checkout "$ORIGINAL_BRANCH" || error "Failed to checkout $ORIGINAL_BRANCH"
+
+# Clean up state
+rm -f "$STATE_FILE"
+
+success "✓ Returned to GitHub context"
+echo ""
+echo "  Current branch:  $ORIGINAL_BRANCH"
+echo "  Experiment preserved: $EXPERIMENT_BRANCH (in Gitea)"
+echo ""
+info "Next steps:"
+echo "  - Continue work on $ORIGINAL_BRANCH"
+echo "  - Create new experiment: switch-to-gitea"
+echo "  - Review experiment: git log $GITEA_REMOTE/$EXPERIMENT_BRANCH"

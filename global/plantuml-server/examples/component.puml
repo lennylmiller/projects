@@ -1,0 +1,16 @@
+@startuml
+package "PlantUML Server" {
+  [Web Interface]
+  [API Endpoint]
+  [Rendering Engine]
+}
+
+[Web Interface] --> [API Endpoint]
+[API Endpoint] --> [Rendering Engine]
+
+cloud "HTTP" {
+  [curl/browser]
+}
+
+[curl/browser] --> [Web Interface]
+@enduml

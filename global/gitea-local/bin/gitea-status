@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# gitea-status - Check Gitea server status
+
+# Colors
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+GITEA_DIR="$(dirname "$SCRIPT_DIR")"
+LOG_FILE="$GITEA_DIR/gitea-server.log"
+
+echo -e "${BLUE}=== Gitea Server Status ===${NC}"
+echo ""
+
+# Check if process is running
+if pgrep -f "gitea web" > /dev/null; then
+    GITEA_PID=$(pgrep -f "gitea web")
+    echo -e "Status:       ${GREEN}RUNNING ✓${NC}"
+    echo "PID:          $GITEA_PID"
+
+    # Get process start time
+    if command -v ps &> /dev/null; then
+        START_TIME=$(ps -p $GITEA_PID -o lstart= 2>/dev/null || echo "Unknown")
+        echo "Started:      $START_TIME"
+    fi
+
+    # Check web interface
+    if curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/ | grep -q "200"; then
+        echo -e "Web UI:       ${GREEN}ACCESSIBLE ✓${NC}"
+    else
+        echo -e "Web UI:       ${YELLOW}NOT RESPONDING${NC}"
+    fi
+
+    echo "URL:          http://localhost:3000/"
+    echo "Log file:     $LOG_FILE"
+
+    # Show recent log entries
+    if [[ -f "$LOG_FILE" ]]; then
+        echo ""
+        echo -e "${BLUE}Recent log entries:${NC}"
+        tail -3 "$LOG_FILE" | sed 's/^/  /'
+    fi
+
+else
+    echo -e "Status:       ${RED}NOT RUNNING ✗${NC}"
+    echo ""
+    echo "Start with: gitea-start"
+fi
+
+echo ""
+echo -e "${BLUE}Commands:${NC}"
+echo "  gitea-start   - Start Gitea server"
+echo "  gitea-stop    - Stop Gitea server"
+echo "  gitea-restart - Restart Gitea server"
+echo "  gitea-logs    - View server logs"

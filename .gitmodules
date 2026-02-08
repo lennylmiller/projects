@@ -1,0 +1,6 @@
+[submodule "global/claude-code-history-viewer"]
+	path = global/claude-code-history-viewer
+	url = git@github.com:lennylmiller/claude-code-history-viewer.git
+[submodule "personal/trailer-journeys"]
+	path = personal/trailer-journeys
+	url = git@github.com:lennylmiller/trailer-journeys.git

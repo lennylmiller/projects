@@ -1,0 +1,124 @@
+#!/usr/bin/env bash
+# switch-to-gitea - Switch from GitHub context to Gitea experiment
+# Task 1: Happy Path #1 - Clean state only
+
+set -e
+set -o pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Configuration
+GITEA_REMOTE="gitea"
+STATE_DIR=".git/gitea-state"
+STATE_FILE="$STATE_DIR/current.json"
+
+# Helper functions
+error() {
+    echo -e "${RED}Error: $1${NC}" >&2
+    exit 1
+}
+
+info() {
+    echo -e "${BLUE}$1${NC}"
+}
+
+success() {
+    echo -e "${GREEN}$1${NC}"
+}
+
+warn() {
+    echo -e "${YELLOW}$1${NC}"
+}
+
+# Check if in a git repository
+if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    error "Not in a git repository"
+fi
+
+# Check if gitea remote exists
+if ! git remote | grep -q "^${GITEA_REMOTE}$"; then
+    error "Gitea remote '${GITEA_REMOTE}' not configured. Add it with:
+    git remote add ${GITEA_REMOTE} http://localhost:3000/YourUsername/YourRepo.git"
+fi
+
+# Check if already in Gitea mode
+if [[ -f "$STATE_FILE" ]]; then
+    CURRENT_EXP=$(jq -r '.experiment_branch' "$STATE_FILE" 2>/dev/null || echo "unknown")
+    error "Already in Gitea mode on branch: $CURRENT_EXP
+    Use 'switch-to-github' to return first"
+fi
+
+# Task 1: Clean state only - reject dirty working directory
+if [[ -n $(git status --porcelain) ]]; then
+    info "Working directory has uncommitted changes:"
+    git status --short
+    echo ""
+    error "Task 1 (Happy Path #1) requires clean working directory.
+
+Options:
+  1. Commit your changes: git add -A && git commit -m \"...\"
+  2. Stash your changes: git stash
+  3. Wait for Task 2 implementation (dirty state support)"
+fi
+
+# Get current branch
+CURRENT_BRANCH=$(git branch --show-current)
+
+if [[ -z "$CURRENT_BRANCH" ]]; then
+    error "Not on a branch (detached HEAD state)"
+fi
+
+info "Current branch: $CURRENT_BRANCH"
+
+# Find next experiment number by checking Gitea remote
+info "Finding next experiment number..."
+
+# Get list of experiment branches from Gitea remote
+EXPERIMENT_NUMS=$(git ls-remote "$GITEA_REMOTE" 'refs/heads/experiments/exp-*' 2>/dev/null | \
+    grep -oP 'experiments/exp-\K[0-9]+' | sort -n || echo "")
+
+if [[ -z "$EXPERIMENT_NUMS" ]]; then
+    NEXT_NUM=1
+else
+    LAST_NUM=$(echo "$EXPERIMENT_NUMS" | tail -1)
+    NEXT_NUM=$((LAST_NUM + 1))
+fi
+
+EXP_BRANCH=$(printf "experiments/exp-%03d" "$NEXT_NUM")
+
+info "Creating experiment branch: $EXP_BRANCH"
+
+# Create experiment branch
+git checkout -b "$EXP_BRANCH" || error "Failed to create branch $EXP_BRANCH"
+
+# Create state directory and file
+mkdir -p "$STATE_DIR"
+
+cat > "$STATE_FILE" <<EOF
+{
+  "mode": "gitea",
+  "experiment_branch": "$EXP_BRANCH",
+  "experiment_number": $NEXT_NUM,
+  "original_branch": "$CURRENT_BRANCH",
+  "original_commit": "$(git rev-parse HEAD)",
+  "timestamp": "$(date -Iseconds)",
+  "clean_state": true
+}
+EOF
+
+success "✓ Switched to Gitea experiment mode"
+echo ""
+echo "  Experiment:      $EXP_BRANCH"
+echo "  Original branch: $CURRENT_BRANCH"
+echo "  State:           Clean"
+echo ""
+info "Next steps:"
+echo "  1. Make experimental changes"
+echo "  2. Commit your work: git add -A && git commit -m \"...\""
+echo "  3. Push to Gitea: git push $GITEA_REMOTE $EXP_BRANCH"
+echo "  4. Return to GitHub: switch-to-github"

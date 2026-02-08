@@ -1,0 +1,19 @@
+@startuml
+title VS Code / Cursor Integration Test
+
+actor User
+participant "VS Code/Cursor" as IDE
+participant "Local PlantUML\nServer" as Server
+
+User -> IDE: Open .puml file
+IDE -> Server: Send diagram code
+Server -> Server: Render diagram
+Server -> IDE: Return PNG/SVG
+IDE -> User: Display preview
+
+note right of IDE
+  Using local server at
+  http://localhost:8765/plantuml
+end note
+
+@enduml

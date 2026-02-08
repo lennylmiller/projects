@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# gitea-restart - Restart Gitea server
+
+set -e
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+echo -e "${BLUE}Restarting Gitea...${NC}"
+echo ""
+
+# Stop if running
+"$SCRIPT_DIR/gitea-stop"
+
+echo ""
+sleep 1
+
+# Start again
+"$SCRIPT_DIR/gitea-start"

@@ -1,0 +1,15 @@
+@startuml
+class PlantUMLServer {
+  +port: int
+  +start()
+  +stop()
+  +render(diagram: String): Image
+}
+
+class DiagramRenderer {
+  +parse(text: String): Diagram
+  +render(diagram: Diagram): Image
+}
+
+PlantUMLServer --> DiagramRenderer
+@enduml

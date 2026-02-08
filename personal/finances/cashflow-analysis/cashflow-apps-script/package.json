@@ -1,0 +1,27 @@
+{
+  "name": "cashflow-apps-script",
+  "version": "1.0.0",
+  "description": "TypeScript-based Google Apps Script cashflow analysis engine",
+  "main": "dist/Code.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/Code.js --platform=neutral --target=es2020",
+    "dev": "npm run build -- --watch",
+    "push": "npm run build && clasp push",
+    "deploy": "npm run build && clasp push && clasp deploy",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": ["cashflow", "apps-script", "typescript", "finance"],
+  "author": "Len Miller",
+  "license": "MIT",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.83",
+    "@types/jest": "^29.5.11",
+    "esbuild": "^0.20.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}

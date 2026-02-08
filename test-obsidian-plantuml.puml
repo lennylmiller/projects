@@ -1,0 +1,22 @@
+@startuml
+title Obsidian PlantUML Integration Test
+
+participant User
+participant Obsidian
+participant "PlantUML Server" as Server
+participant "Diagram Renderer" as Renderer
+
+User -> Obsidian: Open .puml file
+Obsidian -> Server: Request diagram render
+Server -> Renderer: Generate diagram
+Renderer -> Server: Return PNG/SVG
+Server -> Obsidian: Diagram image
+Obsidian -> User: Display diagram
+
+note right of Server
+  Server URL configured
+  via ephemeral mode:
+  http://localhost:8765/plantuml
+end note
+
+@enduml

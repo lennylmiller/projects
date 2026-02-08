@@ -1,0 +1,22 @@
+# Runtime data
+data/
+*.pid
+*.log
+jetty-base/
+.configured
+
+# Nix build artifacts
+result
+result-*
+
+# direnv cache
+.direnv/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
